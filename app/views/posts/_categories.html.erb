@@ -1,0 +1,11 @@
+<div class="dropdown pull-right">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    Filtrar por
+		    <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdown">
+		<% @categories.each do |category| %>
+		    <li><%=link_to category.name,posts_path(category: category.name)%></li>
+		    <% end %>
+		  </ul>
+		</div>

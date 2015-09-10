@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+header {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	margin-bottom:20px;
+	border-bottom:2px solid #f0f0f0;
+}
+ 
+.wrapper {
+	width:90%; 
+	max-width:1000px;
+	margin:auto; 
+	overflow:hidden;
+}
+ 
+header .logo {
+	color:#B8B8B8;
+	font-size:30px;
+	line-height:100px;
+	float:left;
+}
+ 
+header nav {
+	float:right;
+	line-height:100px;
+}
+ 
+
+header nav a {
+	display:inline-block;
+	color:#B8B8B8;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+	text-decoration:none;
+	background:#f56f3a;
+	border-radius:50px;
+}
+.container{
+     width: 700px;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    .posts{
+    margin:10px;
+    border-bottom:2px solid #f2f2f2;
+    }
+	.description{
+	margin:10px;
+	}
+}
+.contenido h1 a{
+	color:#F44336;
+	font-soze:20px;
+	text-decoration:none;
+	margin-bottom:20px;
+}
+.contenido-comentarios{
+	border-bottom:2px solid #f0f0f0;
+	margin:30px;
+}
+
+.btn-login{
+ background:#f56f3a;
+ padding:2px;
+ width:100px;
+ border:none;
+ border-radius:5px;
+ color:#fff;
+ font-size:20px;
+}
+.form-group{
+	width:100%;
+	border:none;
+	padding:5px;
+	font-size:15px;
+	border-bottom:2px solid #f56f3a;
+}
+.field{
+	margin:10px;
+}
+.comments-box{
+margin:10px;
+}
+.text-align-center{
+	text-align:center;
+}
+.pregunta{
+	border-bottom:3px solid #f2f2f2;
+	margin-bottom:10px;
+}
+.pull-left{
+	width:50px;
+	margin-right:20px;
+	}
+img{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+.float-right{
+	text-align:right;
+}
+ p{
+	text-aling:center;
+	padding:10px;
+	font-size:15px;
+} 
+.nueva_pregunta h1{
+	margin:10px; 
+}
+
+.btn{
+	background:#f56f3a;
+	color:#fff;
+	font-size:20px;
+	padding:10px;
+	}
+
+.btn:hover{
+	background:#ED701C;
+	color:#f0f0f0;
+}
+.comment-form{
+overflow:hidden;
+.btn-comment{
+	color:#fff;
+	background:#f56f3a;
+	border:none;
+}
+}
+//notice
+#notice_wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  .alert { background: rgba(245, 111, 58, 0.5); }
+  .notice{ background:rgba(245, 111, 58, 0.5); }
+  .alert, .notice {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;    
+    padding: 35px 0;
+    text-align: center;  
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}

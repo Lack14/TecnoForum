@@ -1,0 +1,16 @@
+<div class="container nueva_pegunta">
+	<%= form_for (@post) do |f|%>	
+<div class="field">
+<%= f.text_field :title, placeholder:"Titulo de la pregunta", class:"form-group"%>
+</div>
+<div class="field">
+	<%=f.collection_select :category_id, Category.all, :id, :name, prompt:"Selecciona una categoria",class:"form-group"%>
+</div>
+<div class="field">
+<%= f.text_area :body, placeholder: "Cual es tu pregunta?", class:"form-group"%>
+</div>
+<div class="actions">
+<%= f.submit "Guardar",class:"btn"%>
+</div>
+	<%end%>
+</div>

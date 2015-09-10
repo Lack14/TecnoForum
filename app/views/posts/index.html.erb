@@ -1,0 +1,25 @@
+	<div class="container">
+		<%=render "categories"%>
+		<%@posts.each do |post| %>
+		<div class="col-md-12">
+			
+				<div class="posts">
+						<div class="pull-left">	
+						<%if post.user.avatar.url.present?%>
+							<%= image_tag post.user.avatar_url() if post.user.avatar_url%>
+							<%else%>
+							<%= image_tag ("default.jpg")%>
+							<%end%>
+						</div>
+					<div class="contenido">	
+						<h1><%= link_to truncate( post.title,length: 50), post%></h1>
+						<small>Posteado por <%=post.user.email%> hace <%=time_ago_in_words(post.created_at)%></small>
+						<div class="description">
+							<p><%= truncate(post.body, length: 30)%></p>
+						</div>
+					</div>
+						</div>
+						
+			</div>
+	<%end%>
+</div>
