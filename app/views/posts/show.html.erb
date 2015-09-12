@@ -16,8 +16,8 @@
 		</div>
 			<div class="float-right">
 				<% if user_signed_in? and @post.user and current_user == @post.user%>
-				<%=link_to "Editar",edit_post_path(@post)%> 
-				<%=link_to "Eliminar",@post,method: :delete%> 
+				<%=link_to "Editar",edit_post_path(@post)%>
+				<%=link_to "Eliminar",@post,method: :delete%>
 				<%end%>
 			</div>
 		</div>
@@ -26,7 +26,7 @@
 <div class="col-md-12 comments">
 		<div class="comment-box">
 			<%@post.comments.each do |comment|%>
-			<div class=" contenido contenido-comentarios">	
+			<div class=" contenido contenido-comentarios">
 		<div class="pull-left">
 					<%if comment.user.avatar.url.present?%>
 						<%= image_tag comment.user.avatar_url() if comment.user.avatar_url%>
@@ -34,7 +34,7 @@
 						<%= image_tag ("default.jpg")%>
 						<%end%>
 		</div>
-				<h4><%= comment.user.email%></h4> 
+				<h4><%= comment.user.email%></h4>
 				<div class="description">
 					<p><%=comment.body%></p>
 				</div>

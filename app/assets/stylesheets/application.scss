@@ -22,26 +22,26 @@ header {
 	margin-bottom:20px;
 	border-bottom:2px solid #f0f0f0;
 }
- 
+
 .wrapper {
-	width:90%; 
+	width:90%;
 	max-width:1000px;
-	margin:auto; 
+	margin:auto;
 	overflow:hidden;
 }
- 
+
 header .logo {
 	color:#B8B8B8;
 	font-size:30px;
 	line-height:100px;
 	float:left;
 }
- 
+
 header nav {
 	float:right;
 	line-height:100px;
 }
- 
+
 
 header nav a {
 	display:inline-block;
@@ -54,7 +54,7 @@ header nav a {
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
 }
- 
+
 header nav a:hover {
 	text-decoration:none;
 	background:#f56f3a;
@@ -131,9 +131,9 @@ border-radius:50%;
 	text-aling:center;
 	padding:10px;
 	font-size:15px;
-} 
+}
 .nueva_pregunta h1{
-	margin:10px; 
+	margin:10px;
 }
 
 .btn{
@@ -148,7 +148,8 @@ border-radius:50%;
 	color:#f0f0f0;
 }
 .comment-form{
-overflow:hidden;
+//overflow:hidden;
+	
 .btn-comment{
 	color:#fff;
 	background:#f56f3a;
@@ -169,9 +170,9 @@ overflow:hidden;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin: 0;    
+    margin: 0;
     padding: 35px 0;
-    text-align: center;  
+    text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   }
 }
